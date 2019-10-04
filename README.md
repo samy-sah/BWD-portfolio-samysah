@@ -16,6 +16,5 @@
       <td>Basic Web development</td>
       <td>1B TI/1I4</td>
   </table>
-  <img scr="![](images/img.jpg)" alt="img">
 </body>
 </html>
