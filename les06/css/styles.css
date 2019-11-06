@@ -1,0 +1,84 @@
+/* 
+ * Samy Sah
+ * Labo 06
+ * Basic Web Development
+ */
+
+ /* element selectors */
+
+body{
+	font-size: 14px;
+	font-family: Arial;
+	background-color: white;
+	width: 1000px;
+}
+blockquote
+{	
+	font-style: italic;
+}
+
+small{
+	display: block;
+	text-align: center;
+}
+a
+{
+	 text-decoration: none;
+}
+ol{
+	 list-style-type: lower-alpha;
+}
+figcaption{
+	font-style: italic;
+	text-align: right
+}
+
+/* ID selector*/
+
+#langmenu{
+	font-size: 10px;
+}
+#profile-photo{
+	width: 200px;
+	padding: 10px;
+	border: solid #ddd 5px;
+}
+/* CLass Selectors */
+
+a.active {
+	text-decoration: underline;
+}
+.comment{
+	background-color: #FFE4C4;
+	padding:5px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+/* Pseudo-element selectors */
+
+a:hover{
+	text-decoration: underline;
+}
+a:focus{
+	outline: 1px dotted #f09;
+}
+#profile-photo{
+	filter: grayscale(100%);
+	transition: filter 0.4s;
+}
+#profile-photo:hover{
+	filter: grayscale(0%);
+}
+::selection{
+	color: white;
+	background-color: #FFE4C4;
+}
+.intro::first-letter{
+	color: purple;
+	font-size: 17px;
+}
+.geenstijl{
+	list-style: none;
+}
+
