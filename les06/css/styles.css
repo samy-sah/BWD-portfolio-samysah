@@ -81,4 +81,28 @@ a:focus{
 .geenstijl{
 	list-style: none;
 }
-
+main a{
+	color: red;
+}
+footer{
+	background-color: purple;
+	padding: 10px;
+}
+a:hover{
+	color: yellow;
+}
+footer a{
+	color: yellow;
+}
+h3{
+	color: #999;
+}
+figure{
+	margin-left: 0px;
+}
+p.tekst{
+	display: none;
+}
+li{
+	list-style-type: lower-alpha;
+}
