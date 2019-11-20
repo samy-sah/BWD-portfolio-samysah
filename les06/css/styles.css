@@ -55,7 +55,7 @@ a.active {
 	margin-bottom:10px;
 }
 
-/* Pseudo-element selectors */
+/* Pseudo-class selectors */
 
 a:hover{
 	text-decoration: underline;
@@ -70,13 +70,16 @@ a:focus{
 #profile-photo:hover{
 	filter: grayscale(0%);
 }
+
+/* pseudo-element selectors */
+
 ::selection{
 	color: white;
 	background-color: #FFE4C4;
 }
 .intro::first-letter{
 	color: purple;
-	font-size: 17px;
+	font-size: 26px;
 }
 .geenstijl{
 	list-style: none;
@@ -99,6 +102,12 @@ h3{
 }
 figure{
 	margin-left: 0px;
+}
+a[href*="tel:"]::before{
+	content: "T: ";
+}
+a[href*="mailto:"]::before{
+	content: "E: ";
 }
 p.tekst{
 	display: none;
