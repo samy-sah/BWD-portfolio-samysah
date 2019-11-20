@@ -1,0 +1,65 @@
+/**
+ * General stylesheet for Mutw
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@kahosl.be>
+ *
+ */
+
+/* =============================================
+ * GENERAL
+ =============================================== */
+	
+body {
+	color: #222;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	line-height: 2.4;
+}
+h2, h3 {
+	font-family: 'Exo', sans-serif;
+	font-weight: normal;
+}
+
+
+/* =============================================
+ * LAYOUT
+ =============================================== */
+
+.wrapper {
+	max-width: 96rem; 
+	margin: 0 auto; /* center horizontally */
+}
+
+header .wrapper {
+	background:  #485865;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3 {
+	font-family: 'Exo', sans-serif;
+	font-weight: normal;
+}
+.column h3 {
+	color: #3d5aac;
+}
+
+
+/* =============================================
+ * HEADER
+ =============================================== */
+
+
+/* =============================================
+ * DOORMAT
+ =============================================== */
+
+
+/* =============================================
+ * FOOTER
+ =============================================== */
+
