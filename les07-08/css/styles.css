@@ -14,6 +14,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	line-height: 2.4;
+	background-color: #62717d;
 }
 h2, h3 {
 	font-family: 'Exo', sans-serif;
@@ -36,6 +37,9 @@ header .wrapper {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: flex-start;
+	padding:5px;
+	margin-top:10px;
+	margin-bottom:10px;
 }
 p {
 	font-family: 'Open Sans', sans-serif;
@@ -52,14 +56,47 @@ h1,h2,h3 {
 /* =============================================
  * HEADER
  =============================================== */
+}	
+ h1 a {
+  background-image: url((img/mutwhero.png); /* set background image */
+  background-size: 100% 100%; /* stretch background image */
+  display: block; /* only block level elements can have width / height */
+  height: 16.1rem; /* stretch link to desired height */
+  overflow: hidden;  /* hide text outside */
+  text-indent: 100%; /* push text outside */
+  white-space: nowrap; /* single line of text */
+  width: 21.4rem; /* stretch link to desired width */
+}
 
+nav{
+	display: inline-block;
+}
 
 /* =============================================
  * DOORMAT
  =============================================== */
+ #doormat{
+ 	background: #939f1a;
+ 	font-size: 14px;
+	font-family: Arial;
+	text-align: horizontal;
+	margin: 0 auto;
+	text-decoration: none;
+ }
+a:hover
+{
+	text-decoration: none;
+	padding:5px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
 
 
 /* =============================================
  * FOOTER
  =============================================== */
+ #footer{
+ 	letter-spacing: 10px;
+ }
 
