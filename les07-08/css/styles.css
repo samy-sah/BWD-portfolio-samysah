@@ -50,15 +50,22 @@ h1,h2,h3 {
 }
 .column h3 {
 	color: #3d5aac;
-}
+	border-bottom: orange; 
+}w
 
 
 /* =============================================
  * HEADER
  =============================================== */
-}	
- h1 a {
-  background-image: url((img/mutwhero.png); /* set background image */
+}
+
+header{
+	background:  #485865;
+	padding: 2px;
+
+}
+ #logo a {
+  background-image: url((..img/mutwhero.png); /* set background image */
   background-size: 100% 100%; /* stretch background image */
   display: block; /* only block level elements can have width / height */
   height: 16.1rem; /* stretch link to desired height */
@@ -69,9 +76,11 @@ h1,h2,h3 {
 }
 
 nav{
+	margin-top: 2rem;
+}
+nav li{
 	display: inline-block;
 }
-
 /* =============================================
  * DOORMAT
  =============================================== */
@@ -99,4 +108,3 @@ a:hover
  #footer{
  	letter-spacing: 10px;
  }
-

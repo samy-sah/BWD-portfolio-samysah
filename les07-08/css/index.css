@@ -43,7 +43,7 @@ h3{
 a:hover{
 	border-radius:0px;
 	float: right; 
-	color: yellow;
+	color: yellow; 
 	transition: filter 0.2s;
 }
 #socialmedia{
