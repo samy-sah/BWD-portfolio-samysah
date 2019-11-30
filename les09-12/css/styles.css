@@ -29,6 +29,3 @@ li {
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-li{
-	float: right;
-}
