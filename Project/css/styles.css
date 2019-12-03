@@ -14,8 +14,7 @@
 	box-sizing: border-box;
 }
 body{
-
-	font-family:  arial;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /*=============================================
@@ -30,7 +29,7 @@ body{
 header{
 	display: flex;
 	width: 85%;
-	height: 18vh;
+	height: 13vh;
 	margin: auto;
 	align-items: center;
 	border-bottom: #fbd368 3px solid;
@@ -44,15 +43,18 @@ header{
 
 .logo-container{
 	flex: 1;
+	height: auto;
 }
 
 nav{
-	flex: 3;
+	display: flex;
 }
 
 .nav-links{
+	flex: 1;
 	justify-content: space-around;
 	list-style: none;
+	width: 50%;
 }
 
 ul li a{
@@ -68,6 +70,16 @@ nav a {
 	text-decoration: none;
 	transition: 0.6s;
 }
+.burger{
+	display: none;
+}
+.burger div{
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+	background-color: black;
+}
+
 nav a:hover {
 	background-color: #000;
 	color: #fff;
@@ -87,18 +99,23 @@ header li.active a{
 
 .intro{
 	flex: 1;
+	position: absolute;
+	width: 1450px;
+	margin-top: 0px;
+	margin-left: 0px;
 }
 
 .text h1{
 	font-weight: 500;
-	font-size: 44px;
+	font-size: 60px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .text p{
 	margin-top: 5px;
-	font-size: 20px;
-	color: red;
+	font-size: 22px;
+	color: #000 ;
 	text-align: center;
 }
 
@@ -110,19 +127,6 @@ header li.active a{
 	opacity: 0.4;
 }
 
-@media screen and(max-width: 1024px){
-	.content{
-		flex-direction: column;
-	}
-	.intro{
-		margin-top: 5vh;
-		text-align: center;
-	}
-	.intro h1{
-		font-size: 30
-		px;
-	}
-	.intro p{
-		font-size: 18px;t
-	}
+.blokjes{
+
 }
