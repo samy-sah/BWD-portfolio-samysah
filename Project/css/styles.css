@@ -34,6 +34,7 @@ header{
 	align-items: center;
 	border-bottom: 0.3rem solid #fbd368;
 	justify-content: space-between;
+	background-color: #fdfce280;
 }
 
 .logo-container{
@@ -42,7 +43,7 @@ header{
 }
 
 .logo-container img{
-	max-width: 100%;
+	max-width: 60%;
 }
 
 nav{
@@ -67,15 +68,6 @@ nav a {
 	text-decoration: none;
 	transition: 0.6s;
 }
-.burger{
-	display: none;
-}
-.burger div{
-	width: 2.5rem;
-	height: 0.3rem;
-	margin: 0.5rem;
-	background-color: black;
-}
 
 nav a:hover {
 	background-color: #000;
@@ -87,16 +79,17 @@ header li.active a{
 }
 
 main {
-	background-image: url(../images/geel1.jpg);
+	background-image: url(../images/lexi.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 .content {
-	padding: 16rem 0 16rem 0;
+	padding: 28rem 0 28rem 0;
 }
 
 .text {
-	background-color: rgba(255, 255, 200, 0.4);
+	background-color: rgba(251, 211, 104, 0.4);
 
 }
 
