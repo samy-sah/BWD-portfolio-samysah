@@ -15,9 +15,13 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
 }
 body{
 	font-family: 'Open Sans', sans-serif;
+	line-height: 2.4;
+	font-size: 13px;
+	background-color: #fbd3682e
 }
 
 /*=============================================
@@ -30,22 +34,25 @@ body{
 ===============================================*/
 
 header{
-	padding: 2rem;
+	padding: 1.1rem;
 	align-items: center;
 	border-bottom: 0.3rem solid #fbd368;
 	justify-content: space-between;
-	background-color: #fdfce280;
+	background-color: #fbd3682e;
+	flex-direction: column;
 }
 
 .logo-container{
 	display: block;
 	max-width: 100%;
+	margin-left: 5.2em;
 }
 
 .logo-container img{
-	max-width: 60%;
+	max-width: 65%;
+	border-style: groove;
+	border-color: #000;
 }
-
 nav{
 	display: flex;
 }
@@ -78,33 +85,38 @@ header li.active a{
 	color: #fbd368;
 }
 
-main {
+main .content {
 	background-image: url(../images/lexi.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
+
 }
 .content {
 	padding: 28rem 0 28rem 0;
 }
 
 .text {
-	background-color: rgba(251, 211, 104, 0.4);
+	background-color: rgba(251, 211, 150, 0.35);
 
 }
 
 .text h1{
 	font-weight: 500;
 	font-size: 6rem;
+	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
+	color: #fff;
 }
 
 .text p{
-	margin-top: 0.5rem;
+	margin-top: -2.5rem;
 	font-size: 2.2rem;
-	color: #000 ;
+	font-weight: bold;
 	text-align: center;
+	color: #fff;
 }
 
 @media(min-width: 50em){ /* 480px = 16 * 30 */
@@ -114,4 +126,58 @@ main {
 	.nav-links{
 		display: flex;
 	}
+}
+main .wrapper {
+	display: flex;
+	flex-flow: row nowrap;	
+}
+
+main .column {
+	width: 30%;
+}
+main img{
+	max-width: 60%;
+
+}
+footer p{
+	margin: 1em 0;
+}
+p{
+	display: block;
+}
+
+
+/* Contact.html*/
+input{
+	width: 100%;
+	align-items: center;
+}
+
+input [type=text]{
+	width: 100%;
+	padding: 1.2em 2em;
+	margin: 0.8em 0;
+	box-sizing: border-box;
+	border-radius: 0.4em;
+	border: 0.2em solid red;
+}
+textarea{
+	width: 100%;
+	height: 15em;
+	padding: 1.2em 2em;
+	box-sizing: border-box;
+	border: 0.2em solid #000;
+	border-radius: 0.4em;
+	background-color: #fdf0cd;
+	resize: none;
+}
+select{
+	width: 100%;
+	padding: 1.6em 2em;
+	border: none;
+	border-radius: 0.4em;
+	background-color: #ccc;
+}
+form{
+	display: inline-block;
 }
