@@ -112,7 +112,7 @@ main .content {
 }
 
 .text p{
-	margin-top: 1.5rem;
+	margin-top: -2.5rem;
 	font-size: 2.2rem;
 	font-weight: bold;
 	text-align: center;
@@ -144,6 +144,18 @@ footer p{
 }
 p{
 	display: block;
+}
+.column{
+	display: flex;
+	float: left;
+	justify-content: center;
+}
+.column img{
+	max-width: 80%;
+}
+h4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
 }
 
 
