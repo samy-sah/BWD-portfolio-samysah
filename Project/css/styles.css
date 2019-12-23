@@ -8,11 +8,12 @@
 /*=============================================
 * General
 ===============================================*/
-html {
+html{
 	font-size: 0.625rem;
 }
 *{
 	box-sizing: border-box;
+	border-radius: 0.4rem;
 	margin: 0;
 	padding: 0;
 }
@@ -72,7 +73,7 @@ ul li a{
 	text-decoration: none;
 }
 
-nav a {
+nav a{
 	border: 1px solid transparent;
 	color: black;
 	padding: 0 2rem;
@@ -80,7 +81,7 @@ nav a {
 	transition: 0.6s;
 }
 
-nav a:hover {
+nav a:hover{
 	background-color: #000;
 	color: #fff;
 }
@@ -97,18 +98,18 @@ main{
 	background-color: #fbd3682e;
 }
 
-main .content {
+main .content{
 	background-image: url(../images/lexi.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
 }
-.content {
+.content{
 	padding: 28rem 0 28rem 0;
 }
 
-.text {
+.text{
 	background-color: rgba(251, 211, 150, 0.35);
 
 }
@@ -137,7 +138,7 @@ main .content {
 		display: flex;
 	}
 }
-main .wrapper {
+main .wrapper{
 	display: flex;
 	flex-flow: row nowrap;	
 }
@@ -162,36 +163,29 @@ main img{
 	font-weight: bold;
 	font-size: 3.4rem;
 }
-#services h3{
+.parents h3{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	font-size: 1.7rem;
 	text-align-last: center;
 }
-#services p{
+.parents p{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5rem;
 	text-align-last: center;
 }
-#services h1{
+.parents h1{
 	align-items: flex-end;
 	display: flex;
 	height: 0.3rem;
-	margin: 8rem auto 0.5rem;
-	width: 25rem;
+	margin: 5rem auto 0.5rem;
+	width: 23rem;
+	margin-left: 47rem;
 }
-.services{
-	align-items: baseline;
-	display: flex;
-	align-items: baseline;
-	margin-left: 10rem;
-	max-width: 100%;
-	margin-right: 1rem;
-	margin-top: 1rem;
-}
+
 .icon{
 	border-style: solid;
-	border-style: outset;
+	border-radius: 1.4rem;
 	font-size: 4rem;
 	height: 10.2rem;
 	margin: 2rem auto;
@@ -199,7 +193,23 @@ main img{
 	padding: 0.4rem 2rem;
 	text-align-last: center;
 }
-
+.parents{
+	display:flex;
+}
+.item{
+	flex-grow: 1;
+	text-align: center;
+	border-top: 2px #0000002e dashed;
+	color: black;
+}
+.item img{
+	height: 20rem;
+	width: 20rem;
+	padding-bottom: 10px;
+}
+.item + .item{
+	margin-left: 10%;
+}
 /*=============================================
 * Footer
 ===============================================*/
@@ -213,6 +223,7 @@ footer h3{
 footer .wrapper{
 	margin-left: 0rem;
 	display: flex;
+	border-radius: 0.4rem;
 	margin-top: 1rem;
 	flex-direction: column-reverse;
 	background-color: #fbd3682e;
@@ -220,12 +231,10 @@ footer .wrapper{
 	box-shadow: 0px 0px 5px 1px #000000;
 	margin-bottom: 2rem;
 }
-
 /*=============================================
 * all-inclusive prices.html
 ===============================================*/
 #prices{
-	margin-top: 25px;
 	width: 100%;
 }
 #prices img{
@@ -259,16 +268,13 @@ footer .wrapper{
 	font-size: 1.3rem;
 	margin-left: 4rem;
 }
-#profile {
+#profile{
 	float: right;
 }
 a {
-	color: #319ab5;
+	color: #000;
 }
-a:hover {
-	text-decoration: underline; 
-}
-#p-bottom {
+#p-bottom{
 	margin-top: 40px;
     font-style: italic;
 	text-align: center;
