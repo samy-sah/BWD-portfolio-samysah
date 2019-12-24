@@ -67,7 +67,7 @@ nav{
 	max-width: 100%;
 }
 
-ul li a{
+.nav-links li a{
 	color: black;
 	font-size: 2rem;
 	text-decoration: none;
@@ -138,6 +138,15 @@ main .content{
 		display: flex;
 	}
 }
+
+@media (min-width: 50rem){
+	.col-md-3 {
+    width: 50%;
+    float: right;
+    display: flex;
+    margin: auto;
+    }
+}
 main .wrapper{
 	display: flex;
 	flex-flow: row nowrap;	
@@ -167,39 +176,30 @@ main img{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	font-size: 1.7rem;
-	text-align-last: center;
+	margin: 3rem;
 }
 .parents p{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5rem;
-	text-align-last: center;
+	margin: 3rem;
+	margin-left: auto;
 }
 .parents h1{
-	align-items: flex-end;
 	display: flex;
-	height: 0.3rem;
 	margin: 5rem auto 0.5rem;
 	width: 23rem;
-	margin-left: 47rem;
 }
 
 .icon{
-	border-style: solid;
-	border-radius: 1.4rem;
 	font-size: 4rem;
-	height: 10.2rem;
-	margin: 2rem auto;
 	max-width: 10rem;
 	padding: 0.4rem 2rem;
-	text-align-last: center;
 }
 .parents{
 	display:flex;
 }
 .item{
-	flex-grow: 1;
-	text-align: center;
-	border-top: 2px #0000002e dashed;
+	border-top: 0.45px #000 dashed;
 	color: black;
 }
 .item img{
@@ -215,10 +215,12 @@ main img{
 ===============================================*/
 
 footer p{
-	margin: 1rem;
+	margin: 0.3rem;
+	margin-left: auto;
 }
 footer h3{
 	margin: 1rem;
+    font-size: 3rem;
 }
 footer .wrapper{
 	margin-left: 0rem;
@@ -231,6 +233,13 @@ footer .wrapper{
 	box-shadow: 0px 0px 5px 1px #000000;
 	margin-bottom: 2rem;
 }
+footer li{
+	text-decoration: none;
+	display: block;
+	margin-left: 1rem;
+	font-size: 1.5rem;
+}
+
 /*=============================================
 * all-inclusive prices.html
 ===============================================*/
