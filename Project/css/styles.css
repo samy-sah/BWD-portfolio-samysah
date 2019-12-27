@@ -13,7 +13,6 @@ html{
 }
 *{
 	box-sizing: border-box;
-	border-radius: 0.4rem;
 	margin: 0;
 	padding: 0;
 }
@@ -22,7 +21,6 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.3rem;
 	line-height: 2;
-	max-width: 115rem;
 	margin: auto;
 }
 a{
@@ -42,37 +40,38 @@ header{
 	align-items: center;
 	border-bottom: 0.3rem solid #fbd368;
 	background-color: #fbd3682e;
-	flex-direction: column;
+	border-radius: 0.4rem;
 	justify-content: space-between;
 	padding: 1.1rem;
 }
-
+header .tel{
+	font-size: 2rem;
+	margin-right: auto;
+}
 .logo-container{
 	display: block;
 	max-width: 100%;
-	margin-left: 8.5em;
 }
-
 .logo-container img{
 	border-style: groove;
 	border-color: #000;
+	border-radius: 0.4rem;
 	max-width: 55%;
 }
 nav{
 	display: flex;
 }
-
 .nav-links{
 	list-style: none;
 	max-width: 100%;
 }
 
 .nav-links li a{
+	border-radius: 0.4rem;
 	color: black;
 	font-size: 2rem;
 	text-decoration: none;
 }
-
 nav a{
 	border: 1px solid transparent;
 	color: black;
@@ -80,7 +79,6 @@ nav a{
 	text-decoration: none;
 	transition: 0.6s;
 }
-
 nav a:hover{
 	background-color: #000;
 	color: #fff;
@@ -97,21 +95,80 @@ header li.active a{
 main{
 	background-color: #fbd3682e;
 }
-
-main .content{
+main .backimg{
 	background-image: url(../images/lexi.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-}
-.content{
 	padding: 28rem 0 28rem 0;
 }
-
+@media(min-width: 50em){ /* 480px = 16 * 30 */
+	header{
+		display: flex;
+	}
+	.nav-links{
+		display: flex;
+	}
+}
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 1.9rem;
+	padding-left: 1.9rem;
+}
+.title{
+	font-size: 4rem;
+	color: #00000087;
+}
+.content h2{
+	font-size: 3rem;
+}
+.parents{
+	background: #fbd36878;
+	display: flex;
+	padding: 5rem 0;
+}
+.parents h1{
+	border-bottom: 0.3rem solid;
+	font-size: 3.5rem;
+	margin-bottom: 5rem;
+	text-align: center;
+}
+.parents p{
+	margin: 0 3rem;
+}
+.icon{
+	border: solid;
+	display: block;
+	font-size: 5rem;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 3rem;
+	width: 10rem;
+	text-align: center;
+}
+@media (min-width: 50rem){
+	.container {
+		width: 100rem;
+	}
+	.wrapper{
+		width: 100rem;
+	}
+	.parents{
+		width: 100%;
+	}
+	.col-md-3{
+		float: left;
+		text-align: center;
+		width: 25%;
+	}
+	main .page img{
+		width: 100%;
+	}
+}
 .text{
 	background-color: rgba(251, 211, 150, 0.35);
-
 }
 .text h1{
 	color: #fff;
@@ -129,87 +186,6 @@ main .content{
 	margin-top: -2.5rem;
 	text-align: center;
 }
-
-@media(min-width: 50em){ /* 480px = 16 * 30 */
-	header{
-		display: flex;
-	}
-	.nav-links{
-		display: flex;
-	}
-}
-
-@media (min-width: 50rem){
-	.col-md-3 {
-    width: 50%;
-    float: right;
-    display: flex;
-    margin: auto;
-    }
-}
-main .wrapper{
-	display: flex;
-	flex-flow: row nowrap;	
-}
-
-main .column {
-	width: 30%;
-}
-main img{
-	max-width: 60%;
-}
-
-.column{
-	display: flex;
-	float: left;
-	justify-content: center;
-}
-.column img{
-	max-width: 80%;
-}
-.Formulaire h4{
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
-	font-size: 3.4rem;
-}
-.parents h3{
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
-	font-size: 1.7rem;
-	margin: 3rem;
-}
-.parents p{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.5rem;
-	margin: 3rem;
-	margin-left: auto;
-}
-.parents h1{
-	display: flex;
-	margin: 5rem auto 0.5rem;
-	width: 23rem;
-}
-
-.icon{
-	font-size: 4rem;
-	max-width: 10rem;
-	padding: 0.4rem 2rem;
-}
-.parents{
-	display:flex;
-}
-.item{
-	border-top: 0.45px #000 dashed;
-	color: black;
-}
-.item img{
-	height: 20rem;
-	width: 20rem;
-	padding-bottom: 10px;
-}
-.item + .item{
-	margin-left: 10%;
-}
 /*=============================================
 * Footer
 ===============================================*/
@@ -218,59 +194,66 @@ footer p{
 	margin: 0.3rem;
 	margin-left: auto;
 	margin-right: 2rem;
+	text-align: center;
 }
 footer h3{
-	margin: 1rem;
-    font-size: 3rem;
+	font-size: 3rem;
 }
-footer .wrapper{
-	margin-left: 0rem;
-	display: flex;
-	border-radius: 0.4rem;
-	margin-top: 1rem;
-	flex-direction: column-reverse;
+footer .container{
 	background-color: #fbd3682e;
-	color: black;
-	box-shadow: 0px 0px 5px 1px #000000;
-	margin-bottom: 2rem;
+	margin-left: 0rem;
+}
+footer .container h3{
+	margin-left: 1rem;
 }
 footer li{
-	text-decoration: none;
 	display: block;
-	margin-left: 1rem;
 	font-size: 1.3rem;
+	margin-left: 1rem;
+	text-decoration: none;
 }
-
+@media (min-width: 50rem){
+	footer {
+		width: 100%;
+	}
 /*=============================================
 * all-inclusive prices.html
 ===============================================*/
-#prices{
+main .page{
+	width: 100%;
+	padding-bottom: 5rem;
+}
+.page img{
 	width: 100%;
 }
-#prices img{
-	margin-top: 1rem;
-	max-width: 60%;
-	margin-left: 23rem;
+.wrapper{
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 1.9rem;
+	padding-left: 1.9rem;
 }
-#prices h4{
-	font-size: 1.5rem;
-	text-transform: uppercase;
-	text-align: center;
-}
-#prices li{
-	font-size: 1.3rem;
-	text-align: center;
-	display: block;
-	border-bottom: 3px black double;
-}
-#airport img{
-	float: right;
+table {
+  border-collapse: collapse;
 }
 
+table, th, td {
+  border: 1px solid black;
+}
+table{
+	width: 100%;
+}
+th{
+	height: 5rem;
+}
+th, td {
+  padding: 1.2rem;
+  text-align: left;
+}
 /*=============================================
 * About.html
 ===============================================*/
 .about img{
+	border-radius: 0.4rem;
 	height: 17rem;
 	margin-top: -4rem;
 }
@@ -284,29 +267,45 @@ footer li{
 }
 #profile{
 	float: right;
+	filter: grayscale(60%);
+	margin-right: 1rem;
+	transition: filter 0.4s;
 }
-a {
+#profile:hover{
+	filter: grayscale(0%);
+}
+a{
 	color: #000;
 }
 #p-bottom{
+	font-style: italic;
 	margin-top: 40px;
-    font-style: italic;
 	text-align: center;
 }
 /*=============================================
 * Contact.html
 * Formulier
 ===============================================*/
-.Formulaire{
-	align-items: center;
-	display: flex;
-	flex-direction: column;
+main aside{
+	border: 3px solid #777160;
+	padding: 1.5rem 2rem;
+	margin: 3rem 2rem;
+	margin-top: 23rem;
+	float: right;
+	margin-right: 23rem;
+}
+.Formulaire h4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 3.4rem;
 }
 input{
 	align-items: center;
 	display: block;
 	margin-bottom: 1rem;
-	width: 120%;
+	width: 25%;
+    margin-top: 1rem;
+}
 }
 
 input [type=text], [type=textarea]{
@@ -319,13 +318,13 @@ input [type=text], [type=textarea]{
 }
 textarea{
 	box-sizing: border-box;
-	border: 0.2em solid #000;
+	border: 0.2em solid #777160;
 	border-radius: 0.4em;
 	background-color: #fdf0cd;
-	height: 15rem;
-	padding: 1.2rem 2rem;
-	width: 100%;
-	resize: none;
+    height: 20rem;
+    width: 40rem;
+    resize: none;
+    display: flex;
 }
 select{
 	border: none;
@@ -344,6 +343,7 @@ input [type=submit]{
 	transition: all 0.6s ease;
 }
 iframe{
+	border-radius: 0.4rem;
 	display: flex;
 	max-width: 100%;
 }
