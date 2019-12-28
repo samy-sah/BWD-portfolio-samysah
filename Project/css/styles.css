@@ -189,7 +189,10 @@ main .backimg{
 /*=============================================
 * Footer
 ===============================================*/
-
+footer{
+	background-color: #fdf0cd;
+	padding: 2rem;
+}
 footer p{
 	margin: 0.3rem;
 	margin-left: auto;
@@ -223,6 +226,14 @@ main .page{
 	width: 100%;
 	padding-bottom: 5rem;
 }
+main .plane{
+	background-image: url(../images/azer.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 28rem 0 28rem 0;
+}
 .page img{
 	width: 100%;
 }
@@ -249,6 +260,19 @@ th, td {
   padding: 1.2rem;
   text-align: left;
 }
+.table {
+	background-color: #fbd36830;
+	padding: 5rem 0;
+}
+@media (min-width: 50rem){
+	.table{
+		width: 100%;
+	}
+	.plane{
+		width: 100%;
+	}
+}
+
 /*=============================================
 * About.html
 ===============================================*/
@@ -300,7 +324,6 @@ main aside{
 	font-size: 3.4rem;
 }
 input{
-	align-items: center;
 	display: block;
 	margin-bottom: 1rem;
 	width: 25%;
