@@ -1,7 +1,7 @@
 /**
 * General stylesheet 
 *
-*@author Samy Sah <samy.sah@student.odisee.be>
+*@author Samy Sah samy.sah@student.odisee.be>
 *
 */
 
@@ -22,6 +22,7 @@ body{
 	font-size: 1.3rem;
 	line-height: 2;
 	margin: auto;
+	max-width: 115rem;
 }
 a{
 	text-decoration: none;
@@ -42,7 +43,7 @@ header{
 	background-color: #fbd3682e;
 	border-radius: 0.4rem;
 	justify-content: space-between;
-	padding: 1.1rem;
+	padding: 3rem;
 }
 header .tel{
 	font-size: 2rem;
@@ -65,7 +66,6 @@ nav{
 	list-style: none;
 	max-width: 100%;
 }
-
 .nav-links li a{
 	border-radius: 0.4rem;
 	color: black;
@@ -87,6 +87,14 @@ header li.active a{
 	background-color: #000;
 	color: #fbd368;
 }
+@media(min-width: 65em){ /* 480px = 16 * 30 */
+	header{
+		display: flex;
+	}
+	.nav-links{
+		display: flex;
+	}
+}
 
 /*=============================================
 * Main
@@ -101,15 +109,7 @@ main .backimg{
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-	padding: 28rem 0 28rem 0;
-}
-@media(min-width: 50em){ /* 480px = 16 * 30 */
-	header{
-		display: flex;
-	}
-	.nav-links{
-		display: flex;
-	}
+	padding: 19rem 0 19rem 0;
 }
 .container{
 	margin-right: auto;
@@ -122,10 +122,10 @@ main .backimg{
 	color: #00000087;
 }
 .content h2{
-	font-size: 3rem;
+	font-size: 3.5rem;
 }
 .parents{
-	background: #fbd36878;
+	background: #fbd36830;
 	display: flex;
 	padding: 5rem 0;
 }
@@ -178,7 +178,6 @@ main .backimg{
 	text-align: center;
 	text-transform: uppercase;
 }
-
 .text p{
 	color: #fff;
 	font-size: 2.2rem;
@@ -219,23 +218,19 @@ footer li{
 	footer {
 		width: 100%;
 	}
+}
 /*=============================================
 * all-inclusive prices.html
 ===============================================*/
 main .page{
-	width: 100%;
 	padding-bottom: 5rem;
 }
-main .plane{
+main .backpp{
 	background-image: url(../images/azer.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-attachment: fixed;
-	padding: 28rem 0 28rem 0;
-}
-.page img{
-	width: 100%;
+	padding: 19rem 0 19rem 0;
 }
 .wrapper{
 	margin-right: auto;
@@ -243,11 +238,10 @@ main .plane{
 	padding-right: 1.9rem;
 	padding-left: 1.9rem;
 }
-table {
+table{
   border-collapse: collapse;
 }
-
-table, th, td {
+table, th, td{
   border: 1px solid black;
 }
 table{
@@ -256,23 +250,14 @@ table{
 th{
 	height: 5rem;
 }
-th, td {
-  padding: 1.2rem;
-  text-align: left;
+th, td{
+	padding: 1.2rem;
+	text-align: left;
 }
-.table {
+.table{
 	background-color: #fbd36830;
 	padding: 5rem 0;
 }
-@media (min-width: 50rem){
-	.table{
-		width: 100%;
-	}
-	.plane{
-		width: 100%;
-	}
-}
-
 /*=============================================
 * About.html
 ===============================================*/
@@ -292,7 +277,7 @@ th, td {
 #profile{
 	float: right;
 	filter: grayscale(60%);
-	margin-right: 1rem;
+	margin: 3rem;
 	transition: filter 0.4s;
 }
 #profile:hover{
@@ -312,11 +297,11 @@ a{
 ===============================================*/
 main aside{
 	border: 3px solid #777160;
-	padding: 1.5rem 2rem;
+	float: right;
 	margin: 3rem 2rem;
 	margin-top: 23rem;
-	float: right;
 	margin-right: 23rem;
+	padding: 1.5rem 2rem;
 }
 .Formulaire h4{
 	font-family: 'Open Sans', sans-serif;
@@ -327,10 +312,8 @@ input{
 	display: block;
 	margin-bottom: 1rem;
 	width: 25%;
-    margin-top: 1rem;
+	margin-top: 1rem;
 }
-}
-
 input [type=text], [type=textarea]{
 	box-sizing: border-box;
 	border-radius: 0.4em;
@@ -344,10 +327,10 @@ textarea{
 	border: 0.2em solid #777160;
 	border-radius: 0.4em;
 	background-color: #fdf0cd;
-    height: 20rem;
-    width: 40rem;
-    resize: none;
-    display: flex;
+	display: flex;
+	height: 20rem;
+	width: 40rem;
+	resize: none;
 }
 select{
 	border: none;
