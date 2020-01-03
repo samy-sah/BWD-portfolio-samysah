@@ -61,7 +61,7 @@ a:hover{
 	text-decoration: underline;
 }
 a:focus{
-	outline: 1px dotted #f09;
+	outline: 1px dotted red;
 }
 #profile-photo{
 	filter: grayscale(100%);

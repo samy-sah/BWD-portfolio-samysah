@@ -19,10 +19,8 @@ html{
 body{
 	background-color: #fbd3682e;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.3rem;
+	font-size: 1.35rem;
 	line-height: 2;
-	margin: auto;
-	max-width: 115rem;
 }
 a{
 	text-decoration: none;
@@ -39,8 +37,7 @@ a{
 
 header{
 	align-items: center;
-	border-bottom: 0.3rem solid #fbd368;
-	background-color: #fbd3682e;
+	background-color: #fbd3685e;
 	border-radius: 0.4rem;
 	justify-content: space-between;
 	padding: 3rem;
@@ -81,7 +78,7 @@ nav a{
 }
 nav a:hover{
 	background-color: #000;
-	color: #fff;
+	color: #fbd368;
 }
 header li.active a{
 	background-color: #000;
@@ -124,10 +121,22 @@ main .backimg{
 .content h2{
 	font-size: 3.5rem;
 }
+::selection{
+	background-color: #000;
+	color: #fbd368;
+}
+.content::first-letter{
+	color: #00000087;
+	font-size: 3rem;
+}
 .parents{
-	background: #fbd36830;
+	background: #fbd3685e;
 	display: flex;
 	padding: 5rem 0;
+}
+a:hover{
+	color: #fbd368;
+	padding: 0.15rem;
 }
 .parents h1{
 	border-bottom: 0.3rem solid;
@@ -189,14 +198,14 @@ main .backimg{
 * Footer
 ===============================================*/
 footer{
-	background-color: #fdf0cd;
+	background-color: #fbd3685e;
 	padding: 2rem;
 }
 footer p{
 	margin: 0.3rem;
 	margin-left: auto;
 	margin-right: 2rem;
-	text-align: center;
+	text-align: right;
 }
 footer h3{
 	font-size: 3rem;
@@ -255,7 +264,6 @@ th, td{
 	text-align: left;
 }
 .table{
-	background-color: #fbd36830;
 	padding: 5rem 0;
 }
 /*=============================================
@@ -303,7 +311,7 @@ main aside{
 	margin-right: 23rem;
 	padding: 1.5rem 2rem;
 }
-.Formulaire h4{
+.formulaire h4{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	font-size: 3.4rem;
