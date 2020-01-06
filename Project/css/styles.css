@@ -248,10 +248,10 @@ main .backpp{
 	padding-left: 1.9rem;
 }
 table{
-  border-collapse: collapse;
+	border-collapse: collapse;
 }
 table, th, td{
-  border: 1px solid black;
+	border: 1px solid black;
 }
 table{
 	width: 100%;
